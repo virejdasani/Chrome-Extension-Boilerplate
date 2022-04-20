@@ -1,1 +1,1 @@
-# Chrome-Extension-Boilerplate
+# Chrome Extension Boilerplate
