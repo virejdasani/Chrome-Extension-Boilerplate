@@ -1,0 +1,255 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header {
+  text-align: center;
+  padding: 0;
+  color: hsl(206, 17%, 28%);
+}
+
+header h1{
+  color: #2a2a2a;
+  font-size: 44px;
+  margin: 0;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 40px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.card-body {
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slidecontainer{
+  width: 100%;
+  text-align: left;
+}
+
+.slidecontainer input{
+  width: 100%;
+}
+
+.toggle-container{
+  width: 100%;
+}
+
+.toggle-sc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #EBEBEB;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-toggle:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-toggle {
+  background-color: #0171FF;
+}
+
+input:focus + .slider-toggle {
+  box-shadow: 0 0 1px #0171FF;
+}
+
+input:checked + .slider-toggle:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider-toggle.round {
+  border-radius: 13px;
+}
+
+.slider-toggle.round:before {
+  border-radius: 50%;
+}
+
+
+.card-footer {
+  text-align: center;
+}
+
+.newpasscontainer{
+  width: 100%;
+  position: relative;
+}
+
+.btn {
+  border: none;
+  background-color: #0171FF;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.btn-copy{
+  border: none;
+  background-color: #ACACAC;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 13px;
+  line-height: 10px;
+  margin: 10px auto;
+  padding: 7px 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#copy-pass{
+  display: none;
+}
+
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+.float-right {
+  float: right;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 40px 15px 15px 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 5%;
+  border-radius: 20px;
+  resize: none;
+  overflow: hidden;
+  background: #F5F5F5;
+  border: none !important;
+  font-family: 'Quicksand', sans-serif;
+  color: #2a2a2a;
+}
+
+
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+    padding: 20px 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 1rem;
+  }
+  .toggle-sc p {
+    width: 150px;
+  }
+  .wrapper {
+    background-image: none;
+    padding: 0 20px 20px;
+  }
+
+  /* header{
+    padding-top: 50px;
+  } */
+}
