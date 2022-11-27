@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Password Generator",
   "version": "1.0.0",
-  "description": "Generate your random password",
+  "description": "Generate your random password and stop using always the same unsafe password",
   "action": {
     "default_icon": "assets/icon.png",
     "default_popup": "popup.html"

@@ -187,6 +187,8 @@ var specialCharacters = [
   
   //Get references to the #copy-pass element
   var copyPassword = document.querySelector('#copy-pass');
+
+  copyPassword.addEventListener('click', copyPass);
   
   // Write password to the #password input
   function writePassword() {

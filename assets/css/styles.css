@@ -10,7 +10,7 @@ body,
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  
+  width: 350px;
 }
 
 body {
@@ -36,7 +36,7 @@ header {
 
 header h1{
   color: #2a2a2a;
-  font-size: 44px;
+  font-size: 30px;
   margin: 0;
 }
 
@@ -46,10 +46,10 @@ header h1{
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
+  margin: 10px auto 0;
+  width: 300px;
   padding: 30px 40px;
+  font-size: 14px;
 }
 
 .card-header::after {
