@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Password Generator",
+  "name": "Your Extension",
   "version": "1.0.0",
-  "description": "Generate a random password",
+  "description": "Extension Description",
   "action": {
     "default_icon": "assets/icon.png",
     "default_popup": "popup.html"
