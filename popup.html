@@ -1,69 +1,31 @@
+<!-- Extension initialized with https://github.com/virejdasani/Chrome-Extension-Boilerplate -->
+
 <!DOCTYPE html>
-<html lang="en-gb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="/Users/floryfran/projects/chrome-extension/Generate-Password-Chrome-Extension/assets/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
+<html lang="en">
 
-        <div class="card-body">
-          <div class="slidecontainer">
-            <input type="range" min="10" max="64" value="" class="slider" id="mySlider">
-            <p>Password length: <span id='passCLenght'></span> characters</p>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-          <div class="toggle-container">
-            <div class="toggle-sc">
-              <p>Include special characters</p>
-              <label class="switch">
-                <input type="checkbox" class="checkbox" id='passSC'>
-                <span class="slider-toggle round"></span>
-              </label>
-            </div>
-            <div class="toggle-sc">
-              <p>Include numbers</p>
-              <label class="switch">
-                <input type="checkbox" class="checkbox" id='passNUM'>
-                <span class="slider-toggle round"></span>
-              </label>
-            </div>
-            <div class="toggle-sc">
-              <p>Include lower case characters</p>
-              <label class="switch">
-                <input type="checkbox" class="checkbox" id='passLC'>
-                <span class="slider-toggle round"></span>
-              </label>
-            </div>
-            <div class="toggle-sc">
-              <p>Include upper case characters</p>
-              <label class="switch">
-                <input type="checkbox" class="checkbox" id='passUC'>
-                <span class="slider-toggle round"></span>
-              </label>
-            </div>
-          </div>
-          <div class="newpasscontainer">
-            <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-            <button onclick="copyPass()" id="copy-pass" class="btn-copy">Copy password</button>
-          </div>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn" disabled="disabled">Generate Password</button>
-        </div>
-      </div>
-      <!-- <p>Designed and developed by FranSalerno</p> -->
-    </div>
-    <script src="/Users/floryfran/projects/chrome-extension/Generate-Password-Chrome-Extension/assets/js/scripts.js"></script>
-  </body>
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Your extension name</title>
+</head>
+
+<body>
+
+  <h1>Your Extension</h1>
+
+  <p>
+    <a class="indicator" href="https://www.youtube.com/channel/UCRzS48bskynAxoI38BFypfQ?sub_confirmation=1"
+      target="_blank">Subscribe to Virej</a> • <a class="indicator"
+      href="https://github.com/virejdasani/Chrome-Extension-Boilerplate" target="_blank">Give the repo
+      a ⭐️</a>
+  </p>
+
+  <script src=" popup.js"></script>
+</body>
+
 </html>
